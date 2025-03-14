@@ -105,8 +105,7 @@
   .mountain-icon {
     width: 60px;
     height: 60px;
-    background-color: var(--primary-color);
-    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-image: url('./assets/logo.png');
     margin: 0 auto 1rem;
   }
   
