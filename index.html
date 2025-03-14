@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Sadan Homestay | Luxury Mountain Retreat</title>
+    <meta name="description" content="Experience the serenity of the mountains at Shiv Sadan Homestay, a luxury retreat offering panoramic views and authentic experiences.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="mountain-icon"></div>
+            <h2>Shiv Sadan</h2>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Shiv Sadan</a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="accommodations.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="booking-btn">
+                <a href="booking.html" class="btn-primary">Book Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="accommodations.html">Accommodations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html" class="btn-mobile-book">Book Now</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="reveal-text">Experience Tranquility at Shiv Sadan</h1>
+            <p class="reveal-text">A luxury mountain homestay nestled in the heart of the Himalayas</p>
+            <div class="hero-buttons">
+                <a href="booking.html" class="btn-primary">Book Your Stay</a>
+                <a href="#virtual-tour" class="btn-secondary">Virtual Tour</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="featured-experience">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Discover Our Mountain Paradise</h2>
+                <p class="section-subtitle">Where luxury meets nature's untouched beauty</p>
+            </div>
+            
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Mountain Views">
+                    </div>
+                    <div class="card-content">
+                        <h3>Panoramic Views</h3>
+                        <p>Wake up to breathtaking mountain vistas that change with the light of day</p>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Luxury Accommodations">
+                    </div>
+                    <div class="card-content">
+                        <h3>Luxury Comfort</h3>
+                        <p>Indulge in our thoughtfully designed spaces that blend local aesthetics with modern amenities</p>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327" alt="Culinary Delights">
+                    </div>
+                    <div class="card-content">
+                        <h3>Culinary Journey</h3>
+                        <p>Savor authentic local cuisine prepared with fresh, seasonal ingredients</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <a href="experiences.html" class="btn-tertiary">Explore All Experiences <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="accommodations-preview">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Stay</span>
+                <h2 class="section-title">Our Accommodations</h2>
+                <p class="section-subtitle">Each room tells a story of comfort and heritage</p>
+            </div>
+            
+            <div class="room-showcase">
+                <div class="room-card featured">
+                    <div class="room-image">
+                        <img src="https://r1imghtlak.mmtcdn.com/97638c01-3563-4081-9aea-5a0935e3210f.jpg" alt="Mountain View Suite">
+                        <div class="room-tag">Popular Choice</div>
+                    </div>
+                    <div class="room-details">
+                        <h3>Mountain View Suite</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-mountain"></i> Panoramic View</span>
+                            <span><i class="fas fa-bed"></i> King Bed</span>
+                            <span><i class="fas fa-bath"></i> Luxury Bath</span>
+                        </div>
+                        <p>Our signature suite offers unparalleled mountain views with floor-to-ceiling windows and a private balcony.</p>
+                        <div class="room-cta">
+                            <span class="room-price">From ₹12,000/night</span>
+                            <a href="accommodations.html#mountain-suite" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-grid">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://r1imghtlak.mmtcdn.com/4ec682c7-8691-4313-86d0-dac9c57ae2f9.jpg" alt="Family Cottage">
+                        </div>
+                        <div class="room-details">
+                            <h3>Family Cottage</h3>
+                            <p>Spacious two-bedroom cottage ideal for families.</p>
+                            <a href="accommodations.html#family-cottage" class="link-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a" alt="Garden Room">
+                        </div>
+                        <div class="room-details">
+                            <h3>Garden Room</h3>
+                            <p>Cozy room with direct access to our flowering gardens.</p>
+                            <a href="accommodations.html#garden-room" class="link-arrow">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <a href="accommodations.html" class="btn-tertiary">View All Accommodations <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Guest Experiences</h2>
+                <p class="section-subtitle">What our guests say about their stay</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Our stay at Shiv Sadan was nothing short of magical. The views are breathtaking, the rooms are immaculate, and the staff made us feel like family. We'll definitely be returning."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Priya & Rahul Sharma</h4>
+                                <p>Delhi, India</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More testimonial slides would go here -->
+                
+                <div class="slider-controls">
+                    <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slide-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                    <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-highlight">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-text">
+                    <span class="section-tag">Location</span>
+                    <h2 class="section-title">Nestled in Nature's Embrace</h2>
+                    <p>Located just 15 kilometers from Munsiyari, Shiv Sadan offers the perfect balance of seclusion and accessibility. Our homestay is surrounded by pine forests with views of the majestic Panchachuli peaks.</p>
+                    <ul class="location-features">
+                        <li><i class="fas fa-mountain"></i> Panoramic mountain views</li>
+                        <li><i class="fas fa-hiking"></i> Access to hiking trails</li>
+                        <li><i class="fas fa-water"></i> Nearby natural springs</li>
+                        <li><i class="fas fa-cloud-sun"></i> Perfect weather year-round</li>
+                    </ul>
+                    <a href="contact.html#directions" class="btn-secondary">Get Directions</a>
+                </div>
+                <div class="location-map">
+                    <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83" alt="Map Location">
+                    <div class="map-overlay">
+                        <a href="contact.html#map" class="btn-map">View Interactive Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="virtual-tour" class="virtual-tour">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Virtual Tour</h2>
+                <p class="section-subtitle">Experience Shiv Sadan before you arrive</p>
+            </div>
+            
+            <div class="tour-preview">
+                <div class="tour-image">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4" alt="Virtual Tour">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive offers and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand">
+                    <h3>Shiv Sadan Homestay</h3>
+                    <p>A luxury mountain retreat where memories are made and nature is celebrated.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="accommodations.html">Accommodations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Near Panchachuli Viewpoint, Munsiyari, Uttarakhand</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@shivsadan.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="policies.html#booking">Booking Policy</a></li>
+                        <li><a href="policies.html#cancellation">Cancellation Policy</a></li>
+                        <li><a href="policies.html#privacy">Privacy Policy</a></li>
+                        <li><a href="policies.html#terms">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shiv Sadan Homestay. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> in the Himalayas</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="booking-widget">
+        <div class="widget-toggle">
+            <span>Book Now</span>
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="widget-content">
+            <h3>Check Availability</h3>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label>Check-in</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Check-out</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select required>
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5+">5+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Check Availability</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

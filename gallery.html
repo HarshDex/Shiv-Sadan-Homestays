@@ -1,0 +1,478 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Gallery - Shiv Sadan Homestay</title> <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="gallery.css"> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> </head> <body> <div class="loader"> <div class="loader-content"> <div class="mountain-icon"></div> <h2>Shiv Sadan</h2> </div> </div>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Shiv Sadan</a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="accommodations.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="booking-btn">
+                <a href="booking.html" class="btn-primary">Book Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="accommodations.html">Accommodations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html" class="btn-mobile-book">Book Now</a></li>
+        </ul>
+    </div>
+    
+    <section class="gallery-hero">
+        <div class="gallery-hero-content">
+            <h1 class="reveal-text">Our Gallery</h1>
+            <p class="reveal-text">Explore the beauty of Shiv Sadan through our lens</p>
+        </div>
+    </section>
+    
+    <section class="gallery-intro">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Visual Journey</span>
+                <h2 class="section-title">Moments Captured in the Mountains</h2>
+                <p class="section-subtitle">Browse through our collection of photographs showcasing the stunning landscapes, cozy accommodations, and memorable experiences at Shiv Sadan Homestay.</p>
+            </div>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="accommodations">Accommodations</button>
+                <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+                <button class="filter-btn" data-filter="experiences">Experiences</button>
+                <button class="filter-btn" data-filter="food">Food & Dining</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- Accommodations -->
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="https://r1imghtlak.mmtcdn.com/97638c01-3563-4081-9aea-5a0935e3210f.jpg" alt="Mountain View Suite" data-full="https://r1imghtlak.mmtcdn.com/97638c01-3563-4081-9aea-5a0935e3210f.jpg">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Mountain View Suite</h3>
+                            <p>Our signature accommodation with panoramic views</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="https://r1imghtlak.mmtcdn.com/4ec682c7-8691-4313-86d0-dac9c57ae2f9.jpg" alt="Family Cottage" data-full="https://r1imghtlak.mmtcdn.com/4ec682c7-8691-4313-86d0-dac9c57ae2f9.jpg">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Family Cottage</h3>
+                            <p>Spacious accommodation perfect for families</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a" alt="Garden Room" data-full="https://images.unsplash.com/photo-1566665797739-1674de7a421a">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Garden Room</h3>
+                            <p>Cozy room with direct access to our flowering gardens</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9" alt="Luxury Bathroom" data-full="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Luxury Bathroom</h3>
+                            <p>Modern amenities with traditional mountain aesthetics</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Landscapes -->
+                <div class="gallery-item large" data-category="landscapes">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Panchachuli Peaks" data-full="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Panchachuli Peaks</h3>
+                            <p>The majestic five peaks visible from our homestay</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Mountain Sunrise" data-full="https://images.unsplash.com/photo-1506905925346-21bda4d32df4">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Mountain Sunrise</h3>
+                            <p>Early morning view from our meditation deck</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Valley View" data-full="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Valley View</h3>
+                            <p>The lush green valley below our homestay</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="https://images.unsplash.com/photo-1501908734255-16579c18c25f" alt="Mountain Waterfall" data-full="https://images.unsplash.com/photo-1501908734255-16579c18c25f">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Mountain Waterfall</h3>
+                            <p>A hidden gem just a short hike from our property</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Night Sky" data-full="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Night Sky</h3>
+                            <p>Stargazing is a must-do activity at Shiv Sadan</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experiences -->
+                <div class="gallery-item" data-category="experiences">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Mountain Meditation" data-full="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Mountain Meditation</h3>
+                            <p>Find inner peace amidst the majestic Himalayas</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="experiences">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Yoga Session" data-full="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Yoga in Nature</h3>
+                            <p>Morning yoga sessions with mountain views</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item large" data-category="experiences">
+                    <img src="https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2" alt="Cooking Class" data-full="https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Local Cooking Class</h3>
+                            <p>Learn traditional Kumaoni cuisine with our chef</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="experiences">
+                    <img src="https://images.unsplash.com/photo-1503791774117-08f40ea50f44" alt="Village Visit" data-full="https://images.unsplash.com/photo-1503791774117-08f40ea50f44">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Village Homestay Visit</h3>
+                            <p>Experience authentic mountain village life</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food & Dining -->
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327" alt="Traditional Thali" data-full="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Traditional Kumaoni Thali</h3>
+                            <p>A complete meal showcasing local flavors</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Mountain Bread" data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Freshly Baked Bread</h3>
+                            <p>Made daily in our traditional stone oven</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd" alt="Herb Garden" data-full="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Our Herb Garden</h3>
+                            <p>Fresh ingredients for our farm-to-table dining</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1513442542250-854d436a73f2" alt="Mountain Tea" data-full="https://images.unsplash.com/photo-1513442542250-854d436a73f2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Himalayan Herbal Tea</h3>
+                            <p>Our signature blend of local herbs and spices</p>
+                        </div>
+                        <div class="gallery-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Social Media</span>
+                <h2 class="section-title">Follow Our Journey</h2>
+                <p class="section-subtitle">Stay connected with us on Instagram for daily updates and behind-the-scenes moments</p>
+            </div>
+            
+            <div class="instagram-grid">
+                <a href="https://www.instagram.com" class="instagram-item" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://www.instagram.com" class="instagram-item" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com" class="instagram-item" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://www.instagram.com" class="instagram-item" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://www.instagram.com" class="instagram-item" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                
+                <a href="https://www.instagram.com" class="instagram-item" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1503791774117-08f40ea50f44" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="instagram-cta">
+                <a href="https://www.instagram.com" class="btn-secondary" target="_blank">
+                    <i class="fab fa-instagram"></i> Follow @shivsadanhomestay
+                </a>
+            </div>
+        </section>
+        
+        <section class="user-photos">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="section-tag">Guest Contributions</span>
+                    <h2 class="section-title">Photos From Our Guests</h2>
+                    <p class="section-subtitle">Share your Shiv Sadan memories with us by tagging #ShivSadanMemories on social media</p>
+                </div>
+                
+                <div class="user-photos-grid">
+                    <!-- These would be dynamically populated from user submissions -->
+                    <div class="user-photo">
+                        <img src="https://images.unsplash.com/photo-1501908734255-16579c18c25f" alt="Guest Photo">
+                        <div class="user-photo-info">
+                            <p class="user-name">@traveler_jane</p>
+                        </div>
+                    </div>
+                    
+                    <div class="user-photo">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Guest Photo">
+                        <div class="user-photo-info">
+                            <p class="user-name">@mountain_lover</p>
+                        </div>
+                    </div>
+                    
+                    <div class="user-photo">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Guest Photo">
+                        <div class="user-photo-info">
+                            <p class="user-name">@hikingaddict</p>
+                        </div>
+                    </div>
+                    
+                    <div class="user-photo">
+                        <img src="https://images.unsplash.com/photo-1465919292275-c60ba49da6ae" alt="Guest Photo">
+                        <div class="user-photo-info">
+                            <p class="user-name">@naturephotographer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="user-photos-cta">
+                    <p>Have photos from your stay? Share them with us!</p>
+                    <a href="contact.html" class="btn-secondary">Submit Your Photos</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Create Your Own Mountain Memories?</h2>
+                    <p>Book your stay at Shiv Sadan and experience the magic of the Himalayas</p>
+                    <div class="cta-buttons">
+                        <a href="booking.html" class="btn-primary">Book Your Stay</a>
+                        <a href="contact.html" class="btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col brand">
+                        <h3>Shiv Sadan Homestay</h3>
+                        <p>A luxury mountain retreat where memories are made and nature is celebrated.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="accommodations.html">Accommodations</a></li>
+                            <li><a href="experiences.html">Experiences</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Near Panchachuli Viewpoint, Munsiyari, Uttarakhand</li>
+                            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                            <li><i class="fas fa-envelope"></i> info@shivsadan.com</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Policies</h4>
+                        <ul>
+                            <li><a href="policies.html#booking">Booking Policy</a></li>
+                            <li><a href="policies.html#cancellation">Cancellation Policy</a></li>
+                            <li><a href="policies.html#privacy">Privacy Policy</a></li>
+                            <li><a href="policies.html#terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Shiv Sadan Homestay. All rights reserved.</p>
+                    <p>Designed with <i class="fas fa-heart"></i> in the Himalayas</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="gallery.js"></script>
+    </body>
+</html>

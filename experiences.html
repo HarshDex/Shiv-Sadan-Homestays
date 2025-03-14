@@ -1,0 +1,652 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Experiences - Shiv Sadan Homestay</title> <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="experiences.css"> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> </head> <body> <div class="loader"> <div class="loader-content"> <div class="mountain-icon"></div> <h2>Shiv Sadan</h2> </div> </div>
+    text
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Shiv Sadan</a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="accommodations.html">Accommodations</a></li>
+                    <li><a href="experiences.html" class="active">Experiences</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="booking-btn">
+                <a href="booking.html" class="btn-primary">Book Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="accommodations.html">Accommodations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html" class="btn-mobile-book">Book Now</a></li>
+        </ul>
+    </div>
+    
+    <section class="experiences-hero">
+        <div class="experiences-hero-content">
+            <h1 class="reveal-text">Unforgettable Experiences</h1>
+            <p class="reveal-text">Discover the magic of the Himalayas through our curated activities</p>
+        </div>
+    </section>
+    
+    <section class="experiences-intro">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Discover</span>
+                <h2 class="section-title">Experiences That Last a Lifetime</h2>
+                <p class="section-subtitle">At Shiv Sadan, we believe that travel is about creating memories through authentic experiences. Our carefully curated activities allow you to connect with the natural beauty, rich culture, and warm hospitality of the Himalayas.</p>
+            </div>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Experiences</button>
+                <button class="tab-btn" data-category="adventure">Adventure</button>
+                <button class="tab-btn" data-category="culture">Culture</button>
+                <button class="tab-btn" data-category="wellness">Wellness</button>
+                <button class="tab-btn" data-category="nature">Nature</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="experiences-grid">
+        <div class="container">
+            <div class="experience-cards">
+                <!-- Adventure Experiences -->
+                <div class="experience-card" data-category="adventure">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Himalayan Trekking">
+                        <div class="experience-tag">Adventure</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Himalayan Trekking</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> Full Day</span>
+                            <span><i class="fas fa-user-friends"></i> 2-8 People</span>
+                            <span><i class="fas fa-bolt"></i> Moderate</span>
+                        </div>
+                        <p>Embark on guided treks through pristine trails with breathtaking views of the Panchachuli peaks. Our experienced local guides will lead you through ancient paths while sharing insights about the region's flora, fauna, and folklore.</p>
+                        <a href="#trek-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="adventure">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Stargazing Expedition">
+                        <div class="experience-tag">Adventure</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Stargazing Expedition</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 3 Hours</span>
+                            <span><i class="fas fa-user-friends"></i> 2-10 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>Experience the magic of the Himalayan night sky far from city lights. Our astronomy expert will guide you through constellations, planets, and celestial phenomena using professional telescopes. Includes hot beverages and snacks.</p>
+                        <a href="#stargazing-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="adventure">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1520962880247-cfaf541c8724" alt="Mountain Biking">
+                        <div class="experience-tag">Adventure</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Mountain Biking</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> Half Day</span>
+                            <span><i class="fas fa-user-friends"></i> 2-6 People</span>
+                            <span><i class="fas fa-bolt"></i> Challenging</span>
+                        </div>
+                        <p>Explore the rugged mountain terrain on two wheels. Our mountain biking excursions cater to various skill levels, from beginners to advanced riders, with routes offering spectacular views and thrilling descents.</p>
+                        <a href="#biking-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Cultural Experiences -->
+                <div class="experience-card" data-category="culture">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2" alt="Local Cooking Class">
+                        <div class="experience-tag">Culture</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Local Cooking Class</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 3 Hours</span>
+                            <span><i class="fas fa-user-friends"></i> 2-8 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>Learn the secrets of traditional Kumaoni cuisine with our chef. Discover local ingredients, traditional cooking techniques, and age-old recipes passed down through generations. Enjoy the fruits of your labor with a communal meal.</p>
+                        <a href="#cooking-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="culture">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1503791774117-08f40ea50f44" alt="Village Homestay Visit">
+                        <div class="experience-tag">Culture</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Village Homestay Visit</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> Half Day</span>
+                            <span><i class="fas fa-user-friends"></i> 2-6 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>Immerse yourself in the daily life of a traditional Himalayan village. Visit a local family, participate in daily activities, and gain insights into the sustainable mountain lifestyle that has remained largely unchanged for centuries.</p>
+                        <a href="#village-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="culture">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1547637589-f54c34f5d7a4" alt="Traditional Craft Workshop">
+                        <div class="experience-tag">Culture</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Traditional Craft Workshop</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 2 Hours</span>
+                            <span><i class="fas fa-user-friends"></i> 1-8 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>Learn the art of traditional Himalayan crafts from local artisans. Try your hand at weaving, woodcarving, or creating traditional paintings. Take home your handmade creation as a meaningful souvenir of your mountain journey.</p>
+                        <a href="#craft-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Wellness Experiences -->
+                <div class="experience-card" data-category="wellness">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Mountain Meditation">
+                        <div class="experience-tag">Wellness</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Mountain Meditation</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 1-2 Hours</span>
+                            <span><i class="fas fa-user-friends"></i> 1-10 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>Find inner peace amidst the majestic Himalayas with guided meditation sessions led by experienced practitioners. Sessions take place at scenic viewpoints during sunrise or sunset, creating the perfect environment for mindfulness.</p>
+                        <a href="#meditation-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="wellness">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Yoga in Nature">
+                        <div class="experience-tag">Wellness</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Yoga in Nature</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 1 Hour</span>
+                            <span><i class="fas fa-user-friends"></i> 1-8 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy-Moderate</span>
+                        </div>
+                        <p>Practice yoga in the most inspiring setting - surrounded by mountain views and fresh air. Our certified yoga instructor offers classes suitable for all levels, focusing on breathing techniques and postures that connect you with nature.</p>
+                        <a href="#yoga-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="wellness">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef" alt="Ayurvedic Treatments">
+                        <div class="experience-tag">Wellness</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Ayurvedic Treatments</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 1-2 Hours</span>
+                            <span><i class="fas fa-user-friends"></i> Individual</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>Rejuvenate your body and mind with traditional Ayurvedic treatments using locally sourced herbs and oils. Our therapist offers customized sessions based on your dosha (body constitution) to promote balance and well-being.</p>
+                        <a href="#ayurveda-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Nature Experiences -->
+                <div class="experience-card" data-category="nature">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Birdwatching Tour">
+                        <div class="experience-tag">Nature</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Birdwatching Tour</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 3-4 Hours</span>
+                            <span><i class="fas fa-user-friends"></i> 2-6 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>The Himalayan region is home to over 500 bird species. Join our expert ornithologist for early morning birdwatching excursions to spot colorful natives and migratory birds. Binoculars and field guides provided.</p>
+                        <a href="#birdwatching-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="nature">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1501908734255-16579c18c25f" alt="Waterfall Hike">
+                        <div class="experience-tag">Nature</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Waterfall Hike</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> Half Day</span>
+                            <span><i class="fas fa-user-friends"></i> 2-10 People</span>
+                            <span><i class="fas fa-bolt"></i> Moderate</span>
+                        </div>
+                        <p>Trek through lush forests to discover hidden waterfalls cascading down the mountainside. These secluded spots offer perfect opportunities for photography, meditation, or simply connecting with the pristine natural environment.</p>
+                        <a href="#waterfall-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card" data-category="nature">
+                    <div class="experience-image">
+                        <img src="https://images.unsplash.com/photo-1535463731090-e34f4b5098c5" alt="Botanical Walk">
+                        <div class="experience-tag">Nature</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Botanical Walk</h3>
+                        <div class="experience-meta">
+                            <span><i class="fas fa-clock"></i> 2-3 Hours</span>
+                            <span><i class="fas fa-user-friends"></i> 2-8 People</span>
+                            <span><i class="fas fa-bolt"></i> Easy</span>
+                        </div>
+                        <p>Discover the rich biodiversity of the Himalayan flora with our resident botanist. Learn about medicinal plants, rare flowers, and ancient trees that thrive in this unique ecosystem. Includes a handbook for identifying common species.</p>
+                        <a href="#botanical-modal" class="btn-secondary experience-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="seasonal-experiences">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Seasonal</span>
+                <h2 class="section-title">Experiences by Season</h2>
+                <p class="section-subtitle">Each season in the Himalayas offers unique experiences and natural phenomena</p>
+            </div>
+            
+            <div class="seasons-tabs">
+                <button class="season-tab active" data-season="spring">Spring (Mar-May)</button>
+                <button class="season-tab" data-season="summer">Summer (Jun-Aug)</button>
+                <button class="season-tab" data-season="autumn">Autumn (Sep-Nov)</button>
+                <button class="season-tab" data-season="winter">Winter (Dec-Feb)</button>
+            </div>
+            
+            <div class="season-highlights">
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h4>Rhododendron Trails</h4>
+                    <p>Trek through forests ablaze with red, pink, and white rhododendron blooms</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4>Photography Expeditions</h4>
+                    <p>Capture the stunning contrast of snow-capped peaks against flowering meadows</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Wildflower Identification</h4>
+                    <p>Learn to identify the diverse Himalayan flora with our expert botanist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="season-content" data-season="summer">
+        <div class="season-image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Summer in the Himalayas">
+        </div>
+        <div class="season-info">
+            <h3>Summer: The Monsoon Magic</h3>
+            <p>Summer brings the monsoon to the Himalayas, transforming the landscape into a lush green paradise. While occasional rain showers occur, they create a mystical atmosphere with clouds floating between mountains and rejuvenated waterfalls.</p>
+            
+            <div class="season-highlights">
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h4>Waterfall Excursions</h4>
+                    <p>Witness the region's waterfalls at their most powerful and majestic state</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h4>Misty Mountain Views</h4>
+                    <p>Experience the ethereal beauty of mountains shrouded in monsoon mists</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Indoor Cultural Workshops</h4>
+                    <p>Perfect time for indoor activities like cooking classes and craft workshops</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="season-content" data-season="autumn">
+        <div class="season-image">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Autumn in the Himalayas">
+        </div>
+        <div class="season-info">
+            <h3>Autumn: Crystal Clear Vistas</h3>
+            <p>Autumn is widely considered the best time to visit the Himalayas. The skies are at their clearest, offering unobstructed mountain views, while the forests turn golden and crimson. The weather is stable with cool, crisp days.</p>
+            
+            <div class="season-highlights">
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h4>Peak Trekking Season</h4>
+                    <p>Ideal conditions for all trekking routes with stable weather and clear views</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <h4>Overnight Camping</h4>
+                    <p>Experience camping under the stars with perfect night sky visibility</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h4>Autumn Foliage Walks</h4>
+                    <p>Witness the beautiful transformation of forest colors throughout the region</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="season-content" data-season="winter">
+        <div class="season-image">
+            <img src="https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22" alt="Winter in the Himalayas">
+        </div>
+        <div class="season-info">
+            <h3>Winter: Snowy Wonderland</h3>
+            <p>Winter transforms the Himalayas into a pristine wonderland with snow-covered peaks and forests. While temperatures drop significantly, the serene beauty and solitude of the mountains during this season offer a unique experience.</p>
+            
+            <div class="season-highlights">
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h4>Snow Trekking</h4>
+                    <p>Guided snow treks with proper equipment for a magical winter experience</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h4>Fireside Cultural Evenings</h4>
+                    <p>Traditional music and storytelling sessions around the warmth of a bonfire</p>
+                </div>
+                
+                <div class="highlight">
+                    <div class="highlight-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h4>Mountain Tea Tasting</h4>
+                    <p>Sample local herbal teas that have warmed Himalayan residents for generations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="custom-experiences">
+<div class="container">
+<div class="custom-content">
+    <div class="custom-text">
+        <span class="section-tag">Personalized</span>
+        <h2>Custom Experiences</h2>
+        <p>Looking for something specific or want to combine different activities? We specialize in creating custom experiences tailored to your interests, fitness level, and schedule.</p>
+        <p>Our local experts can design a personalized itinerary that showcases the best of the Himalayas while catering to your unique preferences, whether you're interested in photography, spirituality, adventure, or simply relaxation.</p>
+        <a href="contact.html" class="btn-primary">Contact Us to Plan</a>
+    </div>
+    <div class="custom-image">
+        <img src="https://images.unsplash.com/photo-1515876305430-f06edab8282a" alt="Custom Himalayan Experience">
+    </div>
+</div>
+</div>
+</section>
+
+<section class="experience-testimonials">
+<div class="container">
+<div class="section-intro">
+    <span class="section-tag">Testimonials</span>
+    <h2 class="section-title">Guest Experiences</h2>
+    <p class="section-subtitle">Hear what our guests have to say about their adventures with us</p>
+</div>
+
+<div class="testimonial-slider">
+    <div class="testimonial-slide active">
+        <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"The guided trek to the Panchachuli viewpoint was the highlight of our stay. Our guide was knowledgeable about local flora and fauna, and shared fascinating stories about the mountains. The packed lunch at the summit was a delightful surprise!"</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>Arjun & Meera Kapoor</h4>
+                    <p>Mumbai, India</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonial-slide">
+        <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"The cooking class was such a wonderful way to learn about local culture through food. We made traditional dishes using ingredients from the homestay's garden, and now we can recreate these flavors at home. A truly immersive experience!"</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>Sarah & Michael Johnson</h4>
+                    <p>Toronto, Canada</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonial-slide">
+        <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"Sunrise yoga overlooking the mountains was a spiritual experience I'll never forget. The instructor was excellent, adapting the session to accommodate both beginners and more experienced practitioners. The perfect way to start each day."</p>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>Emma Wilson</h4>
+                    <p>London, UK</p>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slider-controls">
+        <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+        <div class="slide-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="booking-cta">
+<div class="container">
+<div class="cta-content">
+    <h2>Ready for Your Himalayan Adventure?</h2>
+    <p>Book your stay at Shiv Sadan and experience the magic of the mountains</p>
+    <div class="cta-buttons">
+        <a href="booking.html" class="btn-primary">Book Your Stay</a>
+        <a href="contact.html" class="btn-secondary">Inquire About Experiences</a>
+    </div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+    <div class="footer-col brand">
+        <h3>Shiv Sadan Homestay</h3>
+        <p>A luxury mountain retreat where memories are made and nature is celebrated.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+        </div>
+    </div>
+    
+    <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="accommodations.html">Accommodations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Near Panchachuli Viewpoint, Munsiyari, Uttarakhand</li>
+            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fas fa-envelope"></i> info@shivsadan.com</li>
+        </ul>
+    </div>
+    
+    <div class="footer-col">
+        <h4>Policies</h4>
+        <ul>
+            <li><a href="policies.html#booking">Booking Policy</a></li>
+            <li><a href="policies.html#cancellation">Cancellation Policy</a></li>
+            <li><a href="policies.html#privacy">Privacy Policy</a></li>
+            <li><a href="policies.html#terms">Terms & Conditions</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer-bottom">
+    <p>&copy; 2023 Shiv Sadan Homestay. All rights reserved.</p>
+    <p>Designed with <i class="fas fa-heart"></i> in the Himalayas</p>
+</div>
+</div>
+</footer>
+
+<!-- Experience Modals -->
+<div id="trek-modal" class="experience-modal">
+<div class="modal-content">
+<span class="close-modal">&times;</span>
+<div class="modal-body">
+    <h2>Himalayan Trekking</h2>
+    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Himalayan Trekking">
+    <div class="modal-details">
+        <div class="detail-item">
+            <h4>Duration</h4>
+            <p>Full Day (6-8 hours)</p>
+        </div>
+        <div class="detail-item">
+            <h4>Difficulty</h4>
+            <p>Moderate</p>
+        </div>
+        <div class="detail-item">
+            <h4>Group Size</h4>
+            <p>2-8 People</p>
+        </div>
+        <div class="detail-item">
+            <h4>Price</h4>
+            <p>₹2,500 per person</p>
+        </div>
+    </div>
+    <div class="modal-description">
+        <p>Embark on a guided trek through pristine Himalayan trails with breathtaking views of the Panchachuli peaks. Our experienced local guides will lead you through ancient paths while sharing insights about the region's flora, fauna, and folklore.</p>
+        <p>The trek is customized based on your fitness level and interests, with options ranging from gentle walks to more challenging routes. All treks include a packed lunch, water, and basic first aid supplies.</p>
+        <h4>What to Bring:</h4>
+        <ul>
+            <li>Comfortable hiking shoes</li>
+            <li>Layered clothing</li>
+            <li>Sun protection (hat, sunglasses, sunscreen)</li>
+            <li>Personal water bottle</li>
+            <li>Camera</li>
+        </ul>
+        <h4>Available Routes:</h4>
+        <ul>
+            <li>Panchachuli Base Camp Trail</li>
+            <li>Alpine Meadow Circuit</li>
+            <li>Valley of Flowers Path</li>
+            <li>Ancient Village Route</li>
+        </ul>
+    </div>
+    <div class="modal-cta">
+        <a href="contact.html" class="btn-primary">Book This Experience</a>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="experiences.js"></script>
+</body>
+</html>

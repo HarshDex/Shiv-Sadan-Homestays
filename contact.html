@@ -1,0 +1,323 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Contact Us - Shiv Sadan Homestay</title> <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="contact.css"> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> </head> <body> <div class="loader"> <div class="loader-content"> <div class="mountain-icon"></div> <h2>Shiv Sadan</h2> </div> </div>
+    text
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Shiv Sadan</a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="accommodations.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="booking-btn">
+                <a href="booking.html" class="btn-primary">Book Now</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="accommodations.html">Accommodations</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html" class="btn-mobile-book">Book Now</a></li>
+        </ul>
+    </div>
+    
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1 class="reveal-text">Contact Us</h1>
+            <p class="reveal-text">We'd love to hear from you and help plan your mountain getaway</p>
+        </div>
+    </section>
+    
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>Near Panchachuli Viewpoint, Munsiyari, Uttarakhand, India</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+91 98765 43210</p>
+                    <p>+91 98765 43211</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@shivsadan.com</p>
+                    <p>bookings@shivsadan.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Sunday: 8:00 AM - 8:00 PM</p>
+                    <p>Check-in: 2:00 PM | Check-out: 11:00 AM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-content">
+                    <div class="section-intro">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Send Us a Message</h2>
+                        <p class="section-subtitle">Whether you have a question about our accommodations, experiences, or availability, we're here to help.</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject*</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="booking">Booking Inquiry</option>
+                                    <option value="information">General Information</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message*</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="form-image">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Mountain View">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">Location</span>
+                <h2 class="section-title">How to Find Us</h2>
+                <p class="section-subtitle">Nestled in the heart of the Himalayas, our homestay offers the perfect balance of seclusion and accessibility.</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <!-- Replace with actual Google Maps embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.9171932961285!2d80.23719231507876!3d30.06974198187794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a6e7f7d52fee17%3A0xc33a8e875f74a1e4!2sMunsiyari%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1647529874521!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="directions">
+                <h3>Getting Here</h3>
+                <div class="directions-grid">
+                    <div class="direction-item">
+                        <div class="direction-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>By Air</h4>
+                        <p>The nearest airport is Pantnagar Airport (PGH), approximately 280 km away. From there, you can hire a taxi to Munsiyari.</p>
+                    </div>
+                    
+                    <div class="direction-item">
+                        <div class="direction-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <h4>By Train</h4>
+                        <p>The nearest railway station is Kathgodam, about 260 km away. Regular trains connect Kathgodam to major cities like Delhi. From Kathgodam, you can take a taxi to Munsiyari.</p>
+                    </div>
+                    
+                    <div class="direction-item">
+                        <div class="direction-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h4>By Road</h4>
+                        <p>Munsiyari is well-connected by road. From Munsiyari town, our homestay is a 15-minute drive. We can arrange pickup from Munsiyari on request.</p>
+                    </div>
+                    
+                    <div class="direction-item">
+                        <div class="direction-icon">
+                            <i class="fas fa-shuttle-van"></i>
+                        </div>
+                        <h4>Shuttle Service</h4>
+                        <p>We offer a complimentary shuttle service from Munsiyari town to our homestay for all guests. Please inform us of your arrival details in advance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find quick answers to common questions about contacting and visiting us</p>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What is the best time to contact you?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our office is open from 8:00 AM to 8:00 PM (IST) every day. However, you can send us an email or fill out the contact form at any time, and we'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How far in advance should I book my stay?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We recommend booking at least 2-3 weeks in advance, especially during peak seasons (April-June and September-November). For holiday periods and special occasions, booking 1-2 months ahead is advisable to ensure availability.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you arrange transportation from nearby cities?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we can arrange private transportation from Kathgodam, Pantnagar, or other nearby cities for an additional fee. Please contact us with your travel details, and we'll provide you with options and pricing.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Is there mobile network and internet connectivity at the homestay?</h3>
+                        <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, most major mobile networks have coverage in our area, though signal strength can vary. We provide complimentary WiFi throughout the property, but please note that internet speeds may be slower than in urban areas due to our mountain location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Stay updated with our latest offers, seasonal specials, and mountain stories</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand">
+                    <h3>Shiv Sadan Homestay</h3>
+                    <p>A luxury mountain retreat where memories are made and nature is celebrated.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="accommodations.html">Accommodations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Near Panchachuli Viewpoint, Munsiyari, Uttarakhand</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@shivsadan.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="policies.html#booking">Booking Policy</a></li>
+                        <li><a href="policies.html#cancellation">Cancellation Policy</a></li>
+                        <li><a href="policies.html#privacy">Privacy Policy</a></li>
+                        <li><a href="policies.html#terms">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shiv Sadan Homestay. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> in the Himalayas</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="contact.js"></script>
+    </body> </html>
