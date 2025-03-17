@@ -220,17 +220,14 @@ function initBookingWidget() {
     }
 }
 
-// Virtual Tour Modal
 function initVirtualTour() {
     const tourPreview = document.querySelector('.tour-preview');
     
     if (tourPreview) {
         tourPreview.addEventListener('click', function() {
-            // Create modal
             const modal = document.createElement('div');
             modal.className = 'tour-modal';
             
-            // Sample embedded virtual tour (replace with actual tour)
             modal.innerHTML = `
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
